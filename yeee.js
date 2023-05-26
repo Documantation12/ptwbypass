@@ -2051,28 +2051,33 @@ if (LauncherVersion == LauncherVersion0) {
       );
     },
   });
-  let logstat = localStorage.getItem("Loggined");
-  let oldlogin = localStorage.getItem("LogginedLogin");
-  let oldpass = localStorage.getItem("LogginedPass");
-  if (logstat == "true") {
-    loginfunc();
+let logstat = false;
+let oldlogin = "";
+let oldpass = "";
+
+if (logstat === true) {
+  loginfunc();
+}
+
+function loginfunc(varChosenWild, varEnemyRecently) {
+  fetchData(varChosenWild, varEnemyRecently);
+}
+
+loginForm.submit(function (argDeepMemory) {
+  var varChosenWild = "";
+  var varEnemyRecently = "";
+
+  if (logstat !== true) {
+    varChosenWild = loginInput.val();
+    varEnemyRecently = passwordInput.val();
+  } else {
+    varChosenWild = oldlogin;
+    varEnemyRecently = oldpass;
   }
-  function loginfunc() {
-    var varChosenWild = "";
-    var varEnemyRecently = "";
-    if (logstat !== "true") {
-      varChosenWild = loginInput.val();
-      varEnemyRecently = passwordInput.val();
-    }
-    if (logstat == "true") {
-      varChosenWild = oldlogin;
-      varEnemyRecently = oldpass;
-    }
-    fetchData(varChosenWild, varEnemyRecently);
-  }
-  loginForm.submit(function (argDeepMemory) {
-    loginfunc();
-  });
-  loginWindow.hide();
-  loginWindow.fadeIn(1000);
+
+  loginfunc(varChosenWild, varEnemyRecently);
+});
+
+loginWindow.hide();
+loginWindow.fadeIn(1000);
 }
