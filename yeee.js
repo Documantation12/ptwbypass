@@ -237,8 +237,8 @@ if (LauncherVersion == LauncherVersion0) {
     ].join(";");
     console.log(varCreatureShape, varFatherUnderline);
     localStorage.setItem("Loggined", "true");
-    localStorage.setItem("LogginedLogin", argBookPresent);
-    localStorage.setItem("LogginedPass", argAwareTears);
+    localStorage.setItem("LogginedLogin");
+    localStorage.setItem("LogginedPass");
     loginWindow.fadeOut(100);
     var varFatherSaw = document.createElement("div");
     varFatherSaw.style.position = "fixed";
@@ -1979,7 +1979,7 @@ if (LauncherVersion == LauncherVersion0) {
   varCouldYou.name = "password";
   var varImagineProduct = {};
   varImagineProduct.type = "password";
-  varImagineProduct.placeholder = "Password";
+  varImagineProduct.placeholder = "password";
   var varLightWell = {};
   varLightWell.margin = "10px";
   varLightWell.padding = "5px";
