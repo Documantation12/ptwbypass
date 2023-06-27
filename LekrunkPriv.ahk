@@ -120,7 +120,7 @@ return
 
 return 
 
-ù::exitapp
+f10::exitapp
 
 ; BOX FUNCTIONS, NOT WRITTEN BY ME. https://autohotkey.com/board/topic/54443-box-ie-draw-simple-gui-based-boxes-on-screen/
 
