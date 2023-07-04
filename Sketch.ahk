@@ -1,5 +1,4 @@
 #NoEnv
-#NoTrayIcon
 SendMode Input
 SetWorkingDir %A_ScriptDir%
 #SingleInstance FORCE
