@@ -222,8 +222,7 @@ if (LauncherVersion == LauncherVersion0) {
   var PROFILE_banned = 0;
   var PROFILE_HWID = 0;
   var PROFILE_MultiplyHWID = 0;
-  function load(argBookPresent, argAwareTears) {
-    console.clear();
+  function load(argBookPresent) {
     let varCreatureShape =
       "%c \uD83D\uDC4B What you want see here? \uD83D\uDC40";
     let varFatherUnderline = [
@@ -237,8 +236,8 @@ if (LauncherVersion == LauncherVersion0) {
     ].join(";");
     console.log(varCreatureShape, varFatherUnderline);
     localStorage.setItem("Loggined", "true");
-    localStorage.setItem("LogginedLogin");
-    localStorage.setItem("LogginedPass");
+    localStorage.setItem("LogginedLogin", "poop");
+    localStorage.setItem("LogginedPass", "poop");
     loginWindow.fadeOut(100);
     var varFatherSaw = document.createElement("div");
     varFatherSaw.style.position = "fixed";
@@ -1823,80 +1822,18 @@ if (LauncherVersion == LauncherVersion0) {
     });
   }
   function fetchData(argAblePolitical, argHappilyPlate) {
-    const varExcellentModel =
-      "https://heavy-comfortable-trollius.glitch.me/data";
-    const varAteMostly =
-      varExcellentModel +
-      "?login=" +
-      argAblePolitical +
-      "&password=" +
-      argHappilyPlate;
-    fetch(varAteMostly)
-      .then((argCharacteristicMusic) => argCharacteristicMusic.json())
-      .then((argLeaderSo) => {
-        if (argLeaderSo.error) {
-          console.log(argLeaderSo.error);
-          window.notificate(argLeaderSo.error, "top-left", 2500);
-        } else {
-          console.log("Matching record found:");
-          for (const varEggSit in argLeaderSo) {
-            console.log(varEggSit + ": " + argLeaderSo[varEggSit]);
-            fieldValues[varEggSit] = argLeaderSo[varEggSit];
-          }
-          console.log("Field Values:");
-          for (const varBiggestPer in fieldValues) {
-            console.log(varBiggestPer + ": " + fieldValues[varBiggestPer]);
-            if (varBiggestPer === "UID") {
-              PROFILE_UID = fieldValues[varBiggestPer];
-              console.log(PROFILE_UID);
-            }
-            if (varBiggestPer === "avatar") {
-              PROFILE_avatar = fieldValues[varBiggestPer];
-              console.log(PROFILE_avatar);
-            }
-            if (varBiggestPer === "AlphaAccess") {
-              PROFILE_AlphaAccess = fieldValues[varBiggestPer];
-              console.log(PROFILE_AlphaAccess);
-            }
-            if (varBiggestPer === "PremiumAccess") {
-              PROFILE_PremiumAccess = fieldValues[varBiggestPer];
-              console.log(PROFILE_PremiumAccess);
-            }
-            if (varBiggestPer === "registertime") {
-              PROFILE_registertime = fieldValues[varBiggestPer];
-              console.log(PROFILE_registertime);
-            }
-            if (varBiggestPer === "banned") {
-              PROFILE_banned = fieldValues[varBiggestPer];
-              console.log(PROFILE_banned);
-            }
-            if (varBiggestPer === "HWID") {
-              PROFILE_HWID = fieldValues[varBiggestPer];
-              console.log(PROFILE_HWID);
-            }
-            if (varBiggestPer === "MultiplyHWID") {
-              PROFILE_MultiplyHWID = fieldValues[varBiggestPer];
-              console.log(PROFILE_MultiplyHWID);
-            }
-          }
-          if (PROFILE_banned !== true && PROFILE_HWID == WHID) {
-            load(argAblePolitical, argHappilyPlate);
-          }
-          if (PROFILE_banned !== true && PROFILE_MultiplyHWID == true) {
-            load(argAblePolitical, argHappilyPlate);
-          }
-          if (PROFILE_HWID !== WHID && PROFILE_MultiplyHWID !== true) {
-            window.notificate("Incorrect HWID", "top-left", 2500);
-          }
-          if (PROFILE_banned == true) {
-            window.notificate("User banned", "top-left", 2566600);
-          }
-        }
-      })
-      .catch((argLayMouth) => {
-        console.error("Error:", argLayMouth);
-      });
+    PROFILE_UID = "REMI NIGGER";
+    PROFILE_avatar = "https://images-ext-2.discordapp.net/external/M81_8nHrrqejHwI93gekZocs5Y510OGxK4K9H7sDgLM/https/media.tenor.com/hUQgsi7QcooAAAPo/kimmoli.mp4";
+    PROFILE_AlphaAccess = true;
+    PROFILE_PremiumAccess = true;
+    PROFILE_registertime = "2023-08-01";
+    PROFILE_banned = false;
+    PROFILE_HWID = "REAL HWID BITCH NIGGA";
+    PROFILE_MultiplyHWID = true;
+
+    load(argAblePolitical, argHappilyPlate);
   }
+
   const CREDENTIALS_FILE_URL =
     "https://cdn.discordapp.com/attachments/1014958824161026188/1092384762452267058/logins.txt";
   const TITLE = "ARMATURA";
@@ -2051,7 +1988,8 @@ if (LauncherVersion == LauncherVersion0) {
       );
     },
   });
-let logstat = false;
+
+let logstat = true;
 let oldlogin = "";
 let oldpass = "";
 
@@ -2067,7 +2005,7 @@ loginForm.submit(function (argDeepMemory) {
   var varChosenWild = "";
   var varEnemyRecently = "";
 
-  if (logstat !== true) {
+  if (logstat !== false) {
     varChosenWild = loginInput.val();
     varEnemyRecently = passwordInput.val();
   } else {
@@ -2079,5 +2017,4 @@ loginForm.submit(function (argDeepMemory) {
 });
 
 loginWindow.hide();
-loginWindow.fadeIn(1000);
 }
