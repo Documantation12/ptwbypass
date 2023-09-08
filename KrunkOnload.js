@@ -36,7 +36,7 @@ container.style.cssText = `
   background-image: ${Gui()};
 `;
 const messageElement = document.createElement('span');
-messageElement.textContent = atob('WW91IG5lZWQgdG8gam9pbiB0aGUgRGlzY29yZCBzZXJ2ZXIgZm9yIHRoZSBhY3R1YWwgc2NyaXB0LiBJdCdzIGluIHRoZSBjaGFubmVsICNmZW1ib3Qu');
+messageElement.textContent = "You need to join the Discord server for the actual script. It's in the channel #krunker";
 messageElement.style.cssText = `
   margin-bottom: 20px;
   text-align: center;
