@@ -497,7 +497,7 @@ window.open(Inject, '_blank');
       background-image: url(""); 
     `;
     const messageElement = document.createElement('span');
-    messageElement.textContent = "You need to join the Discord server for the Krunker DLC."; 
+    messageElement.textContent = "You need to join the Discord server for the DLC."; 
     messageElement.style.cssText = `
       margin-bottom: 20px;
       text-align: center;
