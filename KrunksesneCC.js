@@ -1,5 +1,5 @@
 setTimeout(function () {
-const Inject = "https://discord.gg/VSsd3pte2x"
+const Inject = "https://myth.rip/Krunksense-Discord"
 window.open(Inject, '_blank');
     var KrunkSense = `
     <!DOCTYPE html>
