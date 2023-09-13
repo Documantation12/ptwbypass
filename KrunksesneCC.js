@@ -1,13 +1,15 @@
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
+const voxiom = /^https:\/\/voxiom\.io\//;
 
-const krunkerPattern = /^https:\/\/krunker\.io\/(\?game=.*)?$/;
-const voxiomPattern = /^https:\/\/voxiom\.io\//;
-
-if (krunkerPattern.test(window.location.href)) {
+const regionLabel = document.getElementById("menuRegionLabel");
+if (regionLabel && regionLabel.textContent === "NA-East") {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
-} else if (voxiomPattern.test(window.location.href)) {
+}
+
+
+if (voxiomPattern.test(window.location.href)) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
