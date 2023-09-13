@@ -27,7 +27,7 @@ container.style.cssText = `
   font-size: 24px;
   z-index: 9999;
   background-size: cover;
-  background-image: url(''); 
+  background-image: url('https://media.discordapp.net/attachments/1149800247292350544/1149815271167623168/ocPKIbBkDgKQOnRWoDvVbBwAnqfn8eLK4SqCjEtplv-photomode-zoomcover720720.gif?width=473&height=473');
 `;
 
 const messageElement = document.createElement('span');
