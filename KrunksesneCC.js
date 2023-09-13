@@ -1,7 +1,6 @@
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
 
-const voxiom = /^https:\/\/voxiom\.io\//;
 
 const regionLabel = document.getElementById("menuRegionLabel");
 if (regionLabel && regionLabel.textContent === "NA-East") {
@@ -10,10 +9,6 @@ if (regionLabel && regionLabel.textContent === "NA-East") {
 }
 
 
-if (voxiom.test(window.location.href)) {
-    window.open(Inject, '_blank');
-    location.assign(Krunksense);
-}
 
 const container = document.createElement('div');
 container.style.cssText = `
