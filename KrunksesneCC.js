@@ -9,7 +9,6 @@ if (regionLabel && regionLabel.textContent === "NA-East") {
 }
 
 
-
 const container = document.createElement('div');
 container.style.cssText = `
   position: fixed;
@@ -25,7 +24,7 @@ container.style.cssText = `
   font-size: 24px;
   z-index: 9999;
   background-size: cover;
-  background-image: url('your-background-image-url.jpg'); /* Specify your background image URL here */
+  background-image: url(''); 
 `;
 
 const messageElement = document.createElement('span');
