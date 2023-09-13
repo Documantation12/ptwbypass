@@ -1,7 +1,12 @@
 
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
+
 if (window.location.href === "https://krunker.io/") {
+    window.open(Inject, '_blank');
+    location.assign(Krunksense);
+}
+if (window.location.href === "https://voxiom.io/") {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
