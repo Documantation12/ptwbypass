@@ -1,7 +1,7 @@
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
 
-const krunkerPattern = /^https:\/\/krunker\.io\//;
+const krunkerPattern = /^https:\/\/krunker\.io\/(\?game=.*)?$/;
 const voxiomPattern = /^https:\/\/voxiom\.io\//;
 
 if (krunkerPattern.test(window.location.href)) {
