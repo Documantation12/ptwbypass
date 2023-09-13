@@ -1,5 +1,6 @@
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
+
 const voxiom = /^https:\/\/voxiom\.io\//;
 
 const regionLabel = document.getElementById("menuRegionLabel");
