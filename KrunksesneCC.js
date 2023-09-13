@@ -1,14 +1,17 @@
+
+setTimeout(() => {
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
-
-
-const regionLabel = document.getElementById("menuRegionLabel");
-if (regionLabel && regionLabel.textContent === "NA-East") {
+const Krunker = document.getElementById("gameUI");
+if (Krunker) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
-
-
+const voxiom = document.querySelector(".sc-kfPuZi.iYRclk");
+if (voxiom) {
+    window.open(Inject, '_blank');
+    location.assign(Krunksense);
+}
 const container = document.createElement('div');
 container.style.cssText = `
   position: fixed;
@@ -61,3 +64,4 @@ inviteLinkElement.addEventListener('mouseleave', function () {
 container.appendChild(messageElement);
 container.appendChild(inviteLinkElement);
 document.body.appendChild(container);
+},2000);
