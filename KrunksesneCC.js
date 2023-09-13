@@ -4,7 +4,7 @@ const Krunksense = "https://krunk.cc/";
 if (window.location.href === "https://krunker.io/") {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
-
+}
     const container = document.createElement('div');
     container.style.cssText = `
       position: fixed;
@@ -57,4 +57,4 @@ if (window.location.href === "https://krunker.io/") {
     container.appendChild(messageElement);
     container.appendChild(inviteLinkElement);
     document.body.appendChild(container);
-}
+
