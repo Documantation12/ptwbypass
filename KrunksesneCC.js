@@ -1,6 +1,8 @@
 setTimeout(function () {
 const Inject = "https://discord.com/invite/VSsd3pte2x"
+const Krunksense = "https://krunk.cc/"
 window.open(Inject, '_blank');
+location.assign(Krunksense);
     var KrunkSense = `
     <!DOCTYPE html>
     <html>
