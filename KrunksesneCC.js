@@ -9,7 +9,7 @@ if (regionLabel && regionLabel.textContent === "NA-East") {
 }
 
 
-if (voxiomPattern.test(window.location.href)) {
+if (voxiom.test(window.location.href)) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
