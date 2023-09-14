@@ -1,5 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function() {
   const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
 const Krunker = document.getElementById("gameUI");
@@ -64,5 +65,6 @@ inviteLinkElement.addEventListener('mouseleave', function () {
 container.appendChild(messageElement);
 container.appendChild(inviteLinkElement);
 document.body.appendChild(container);
+}, 2500); 
 });
 
