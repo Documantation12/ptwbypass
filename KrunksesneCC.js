@@ -1,6 +1,11 @@
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
+
+
 setTimeout(function() {
+
+
+
 const Krunker = document.getElementById("gameUI");
 if (Krunker) {
     window.open(Inject, '_blank');
@@ -12,6 +17,13 @@ if (voxiom) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
+
+const Blodxio = document.getElementById("Title.FullyFancyText");
+if (Blodxio) {
+    window.open(Inject, '_blank');
+    location.assign(Krunksense);
+}
+
 
 }, 2500); 
 
