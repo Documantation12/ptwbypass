@@ -64,4 +64,4 @@ inviteLinkElement.addEventListener('mouseleave', function () {
 container.appendChild(messageElement);
 container.appendChild(inviteLinkElement);
 document.body.appendChild(container);
-},2000);
+},5000);
