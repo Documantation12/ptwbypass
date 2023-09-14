@@ -1,7 +1,6 @@
-setTimeout(function() {
-
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
+setTimeout(function() {
 const Krunker = document.getElementById("gameUI");
 if (Krunker) {
     window.open(Inject, '_blank');
