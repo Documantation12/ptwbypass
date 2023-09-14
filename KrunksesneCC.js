@@ -1,4 +1,4 @@
-
+setTimeout(function() {
 
 const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
@@ -7,11 +7,15 @@ if (Krunker) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
+
 const voxiom = document.querySelector(".sc-kfPuZi.iYRclk");
 if (voxiom) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
+
+}, 2500); 
+
 setTimeout(function() {
 const container = document.createElement('div');
 container.style.cssText = `
@@ -65,5 +69,5 @@ inviteLinkElement.addEventListener('mouseleave', function () {
 container.appendChild(messageElement);
 container.appendChild(inviteLinkElement);
 document.body.appendChild(container);
-}, 2500); 
+}, 1000); 
 
