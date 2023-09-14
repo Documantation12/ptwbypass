@@ -1,6 +1,6 @@
 
-setTimeout(function() {
-  const Inject = "https://discord.com/invite/VSsd3pte2x";
+
+const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
 const Krunker = document.getElementById("gameUI");
 if (Krunker) {
@@ -12,6 +12,7 @@ if (voxiom) {
     window.open(Inject, '_blank');
     location.assign(Krunksense);
 }
+setTimeout(function() {
 const container = document.createElement('div');
 container.style.cssText = `
   position: fixed;
