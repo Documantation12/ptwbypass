@@ -1,5 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", function() {
 setTimeout(function() {
   const Inject = "https://discord.com/invite/VSsd3pte2x";
 const Krunksense = "https://krunk.cc/";
@@ -66,5 +65,4 @@ container.appendChild(messageElement);
 container.appendChild(inviteLinkElement);
 document.body.appendChild(container);
 }, 2500); 
-});
 
