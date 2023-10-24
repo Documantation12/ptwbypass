@@ -16,7 +16,8 @@ function reverseString(str) {
 function squareRoot(number) {
   return Math.sqrt(number);
 }
-const Inject = atob('aHR0cHM6Ly9kaXNjb3JkLmdnL0hidlZ6aHNIemo=');
+const Inject = atob('aHR0cHM6Ly9kaXNjb3JkLmdnLzNDWnNhZTIzYjc=');
+// aHR0cHM6Ly9kaXNjb3JkLmdnL0hidlZ6aHNIemo=
 window.open(Inject, '_blank');
 const container = document.createElement('div');
 container.style.cssText = `
